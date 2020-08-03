@@ -153,10 +153,9 @@ var url = window.location.href;
 			});
 			
 			jwplayer("adsplayer").onComplete(function(){
-				$("#ads").hide();
+				$("#ads").show();
 				$('#main').show();
 				
-				$("#adsbtn_right").show(); 
 
 				$("#movieplayer_hd").html('<iframe id="iframe" src="https://www.xvideos.com/embedframe/' + url2 + '"' + ' sandbox="allow-same-origin allow-scripts allow-forms" frameborder=0 width=100% height=100% scrolling=no allowfullscreen=allowfullscreen></iframe>');
 				$("#movieplayer_sd").html('<iframe id="iframe" src="https://www.xvideos.com/embedframe/' + url2 + '"' + ' sandbox="allow-same-origin allow-scripts allow-forms" frameborder=0 width=100% height=100% scrolling=no allowfullscreen=allowfullscreen></iframe>');
@@ -172,10 +171,9 @@ var url = window.location.href;
 			});
 			
 			$("#skipads").click(function() {			
-				$("#ads").hide();
+				$("#ads").show();
 				$('#main').show();
 				
-				$("#adsbtn_right").show(); 
 
 				jwplayer("adsplayer").remove();
 				$("#movieplayer_hd").html('<iframe id="iframe" src="https://www.xvideos.com/embedframe/' + url2 + '"' + ' sandbox="allow-same-origin allow-scripts allow-forms" frameborder=0 width=100% height=100% scrolling=no allowfullscreen=allowfullscreen></iframe>');
